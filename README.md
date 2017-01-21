@@ -1,6 +1,8 @@
 # pc-app-scaffold
 
-A scaffold for [Pathway Commons](http://www.pathwaycommons.org/) app components.
+A scaffold for [Pathway Commons](http://www.pathwaycommons.org/) app components. This is a clone of the [slush-js](https://github.com/maxkfranz/slush-js) scaffold that is modified to reflect our specific app requirements.
+
+> The generated project has live reloading on code changes. The live reloading has been tweaked to be very fast to maximise productivity. You write all your JS as normal JS (with ES2015/ES6 support). You write all your CSS as normal CSS (with CSS4 support). You also get all the niceties of a modern stack with the productivity of a build system.
 
 ## Features
 
@@ -64,7 +66,7 @@ This is the same as
 $ npm i -SB <package name>
 ```
 
-The option `--save-bundled` allows packages to be included via `require()`. In order to keep debug watch fast, it's necessary to maintain dependencies in `bundledDependencies` in `package.json`.  This also allows for shipping updates to the app without busting the cache for the dependencies on clients.
+The option `--save-bundled` allows packages to be included via `require()`. In order to keep debug watch fast - take a look at the `gulpfile.js` variable `deps` - it's necessary to maintain dependencies in `bundledDependencies` in `package.json`.  This also allows for shipping updates to the app without busting the cache for the dependencies on clients.
 
 > Aside: Using the `bundledDependencies` field in `package.json` in this way isn't strictly how it's intended to be used, but it should be fine since `pc-app-scaffold` will never be published to npm and no one would `require('pc-app-scaffold')`.  (Mis)using `bundledDependencies` in this way lets us just use `npm` commands without editing `package.json` manually, while keeping common dependencies on the same version on the client and the server.
 
