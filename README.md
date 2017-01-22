@@ -1,16 +1,6 @@
-# pc-app-scaffold
+# pc_guide_enrichment_workflow_ii_app
 
-A scaffold for [Pathway Commons](http://www.pathwaycommons.org/) app components. This is a clone of the [slush-js](https://github.com/maxkfranz/slush-js) scaffold that is modified to reflect our specific app requirements.
-
-> The generated project has live reloading on code changes. The live reloading has been tweaked to be very fast to maximise productivity. You write all your JS as normal JS (with ES2015/ES6 support). You write all your CSS as normal CSS (with CSS4 support). You also get all the niceties of a modern stack with the productivity of a build system.
-
-## Features
-
-- [React](https://facebook.github.io/react/)
-  - We (re-)use React for all of our user interface components.
-- [livereload](https://www.npmjs.com/package/livereload)
-  - Code changes will automatically fire a browser refresh
-
+A Node.js app for the [Pathway Commons Guide](http://pathwaycommons.github.io/guide/) workflow [Pathway Enrichment - II](http://pathwaycommons.github.io/guide/workflows/pathway_enrichment_ii/index/).
 
 ## Getting Started
 

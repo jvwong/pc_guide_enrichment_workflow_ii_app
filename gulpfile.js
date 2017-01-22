@@ -188,7 +188,7 @@ gulp.task('watch', ['css', 'js-deps'], function(){
     basePath: process.cwd()
   });
 
-  gulp.watch( ['./src/views/index.html', './src/demo.html', './build/deps.js', './build/bundle.js', './build/bundle.css'] )
+  gulp.watch( ['./src/views/index.ejs', './build/deps.js', './build/bundle.js', './build/bundle.css'] )
     .on('change', $.livereload.changed)
   ;
 

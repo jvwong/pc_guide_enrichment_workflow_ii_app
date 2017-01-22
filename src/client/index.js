@@ -1,21 +1,17 @@
 require('babel-polyfill');
 
-let debug = require('./debug');
+const debug = require('./debug');
 
 if( debug.enabled ){
   debug.init();
 }
 
-// TODO client
-// react example
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-let React = require('react');
-let ReactDOM = require('react-dom');
-
-let div = document.createElement('div');
-document.body.appendChild( div );
+const root = document.getElementById('root');
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  div
+  <h1>Hello, Pathway Commons App!</h1>,
+  root
 );
